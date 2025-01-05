@@ -1,0 +1,86 @@
+{
+  "entityType" : "RULE_CHAIN",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : ""
+    },
+    "configuration" : null,
+    "debugMode" : false,
+    "externalId" : null,
+    "firstRuleNodeId" : null,
+    "id" : {
+      "entityType" : "RULE_CHAIN",
+      "id" : "a881b630-cb50-11ef-910b-9da3e0fffcad"
+    },
+    "name" : "Energy daily conv",
+    "root" : false,
+    "type" : "CORE"
+  },
+  "metaData" : {
+    "connections" : null,
+    "firstNodeIndex" : null,
+    "nodes" : [ {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 336,
+        "layoutY" : 53
+      },
+      "configuration" : {
+        "latestTsKeyNames" : [ "TotkWhSolar_DCH" ],
+        "aggregation" : "MAX",
+        "fetchMode" : "LAST",
+        "orderBy" : "ASC",
+        "limit" : 1000,
+        "useMetadataIntervalPatterns" : false,
+        "startIntervalPattern" : "",
+        "endIntervalPattern" : "",
+        "startInterval" : 2,
+        "startIntervalTimeUnit" : "DAYS",
+        "endInterval" : 1,
+        "endIntervalTimeUnit" : "DAYS"
+      },
+      "configurationVersion" : 2,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "31176ee0-cb56-11ef-9573-f977d35e652f"
+      },
+      "name" : "ori data tot dch kwh",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.metadata.TbGetTelemetryNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 568,
+        "layoutY" : 53
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "return msg.temperature > 20;",
+        "tbelScript" : "return msg.temperature > 20;"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "76958e70-cb5b-11ef-910b-9da3e0fffcad"
+      },
+      "name" : "conv the data",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.filter.TbJsFilterNode"
+    } ],
+    "ruleChainConnections" : null
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

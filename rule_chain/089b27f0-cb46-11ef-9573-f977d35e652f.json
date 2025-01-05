@@ -1,0 +1,84 @@
+{
+  "entityType" : "RULE_CHAIN",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : ""
+    },
+    "configuration" : null,
+    "debugMode" : false,
+    "externalId" : null,
+    "firstRuleNodeId" : null,
+    "id" : {
+      "entityType" : "RULE_CHAIN",
+      "id" : "089b27f0-cb46-11ef-9573-f977d35e652f"
+    },
+    "name" : "Data Emulator",
+    "root" : false,
+    "type" : "CORE"
+  },
+  "metaData" : {
+    "connections" : [ {
+      "fromIndex" : 0,
+      "toIndex" : 1,
+      "type" : "Success"
+    } ],
+    "firstNodeIndex" : null,
+    "nodes" : [ {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 336,
+        "layoutY" : 55
+      },
+      "configuration" : {
+        "msgCount" : 0,
+        "periodInSeconds" : 60,
+        "scriptLang" : "JS",
+        "jsScript" : "var time = new Date().getHours(); // Current hour\r\nvar weather = \"cloudy\"; // Simulated weather condition\r\n\r\n// Simulated irradiance generation function\r\nvar irradiance_emu = (function(time, weather) {\r\n    let baseIrradiance = 0;\r\n\r\n    if (time >= 6 && time < 9) {\r\n        baseIrradiance = Math.random() * 100 +\r\n            200; // Morning\r\n    } else if (time >= 9 && time < 15) {\r\n        baseIrradiance = Math.random() * 200 +\r\n            600; // Noon\r\n    } else if (time >= 15 && time < 18) {\r\n        baseIrradiance = Math.random() *100+ 100; // Evening\r\n    } else {\r\n        baseIrradiance = Math.random() * 0; // Night\r\n    }\r\n\r\n    // Weather adjustments\r\n    if (weather === \"cloudy\") {\r\n        baseIrradiance *= 0.4;\r\n    } else if (weather === \"rainy\") {\r\n        baseIrradiance *= 0.2;\r\n    }\r\n\r\n    return parseFloat(baseIrradiance.toFixed(2));\r\n})(time, weather);\r\n\r\n// Output to ThingsBoard\r\nreturn {\r\n    msg: {\r\n        irradiance_emu: irradiance_emu\r\n    },\r\n    metadata: {},\r\n    msgType: \"POST_TELEMETRY_REQUEST\"\r\n};",
+        "tbelScript" : "",
+        "originatorId" : "c450d3d0-cb48-11ef-910b-9da3e0fffcad",
+        "originatorType" : "DEVICE"
+      },
+      "configurationVersion" : 2,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "a528e7e0-cb48-11ef-910b-9da3e0fffcad"
+      },
+      "name" : "Irradiance data emulator",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.debug.TbMsgGeneratorNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 596,
+        "layoutY" : 130
+      },
+      "configuration" : {
+        "forwardMsgToDefaultRuleChain" : false,
+        "ruleChainId" : "06f81da0-c2f3-11ef-9573-f977d35e652f"
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "67181f60-cb49-11ef-9c23-49209c3d9e87"
+      },
+      "name" : "to root rule chain",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.flow.TbRuleChainInputNode"
+    } ],
+    "ruleChainConnections" : null
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

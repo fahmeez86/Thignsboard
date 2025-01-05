@@ -1,0 +1,99 @@
+{
+  "entityType" : "DEVICE",
+  "entity" : {
+    "additionalInfo" : null,
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "f74a3b20-cb64-11ef-9c23-49209c3d9e87"
+    },
+    "deviceData" : {
+      "configuration" : {
+        "type" : "DEFAULT"
+      },
+      "transportConfiguration" : {
+        "type" : "DEFAULT"
+      }
+    },
+    "deviceProfileId" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "433d6340-c737-11ef-9573-f977d35e652f"
+    },
+    "externalId" : null,
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE",
+      "id" : "435ef500-c737-11ef-9573-f977d35e652f"
+    },
+    "label" : null,
+    "name" : "Smart sensor",
+    "ownerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "f74a3b20-cb64-11ef-9c23-49209c3d9e87"
+    },
+    "softwareId" : null,
+    "type" : "smart-sensor"
+  },
+  "credentials" : {
+    "credentialsId" : "DYZRkdkHHNn2ZNwT8lVO",
+    "credentialsType" : "ACCESS_TOKEN",
+    "credentialsValue" : null
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "435271e0-c737-11ef-9573-f977d35e652f"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "435ef500-c737-11ef-9573-f977d35e652f"
+    },
+    "type" : "Contains",
+    "typeGroup" : "COMMON",
+    "version" : 260624
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "active",
+      "lastUpdateTs" : 1735623185764,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityAlarmTime",
+      "lastUpdateTs" : 1735623185764,
+      "longValue" : 1735623185763,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "type",
+      "lastUpdateTs" : 1735622563984,
+      "longValue" : null,
+      "strValue" : "smart-sensor"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 0.55,
+      "jsonValue" : null,
+      "key" : "xPos",
+      "lastUpdateTs" : 1735622563984,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 0.4,
+      "jsonValue" : null,
+      "key" : "yPos",
+      "lastUpdateTs" : 1735622563984,
+      "longValue" : null,
+      "strValue" : null
+    } ],
+    "SHARED_SCOPE" : [ ]
+  }
+}

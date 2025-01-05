@@ -1,0 +1,61 @@
+{
+  "entityType" : "ASSET",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : ""
+    },
+    "assetProfileId" : {
+      "entityType" : "ASSET_PROFILE",
+      "id" : "0716c930-c2f3-11ef-9573-f977d35e652f"
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "f74a3b20-cb64-11ef-9c23-49209c3d9e87"
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "ASSET",
+      "id" : "bde4b7b0-c732-11ef-9c23-49209c3d9e87"
+    },
+    "label" : null,
+    "name" : "DCH Contract Manufacturing 2,231.23 kWp",
+    "ownerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "f74a3b20-cb64-11ef-9c23-49209c3d9e87"
+    },
+    "type" : "default"
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "bde4b7b0-c732-11ef-9c23-49209c3d9e87"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "60f96ed0-c334-11ef-9573-f977d35e652f"
+    },
+    "type" : "Contains",
+    "typeGroup" : "COMMON",
+    "version" : 260611
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "address",
+      "lastUpdateTs" : 1735749795954,
+      "longValue" : null,
+      "strValue" : "Lot 6, Persiaran Perusahaan, Seksyen 23, 40300 Shah Alam, Selangor"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "type",
+      "lastUpdateTs" : 1735754609900,
+      "longValue" : null,
+      "strValue" : "SELF-CONSUMPTION (SELCO)"
+    } ]
+  }
+}
