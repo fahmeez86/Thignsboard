@@ -31,9 +31,5 @@
     },
     "name" : "Edge communication failure notification",
     "notificationType" : "EDGE_COMMUNICATION_FAILURE"
-  },
-  "relations" : [ ],
-  "attributes" : {
-    "SERVER_SCOPE" : [ ]
   }
 }

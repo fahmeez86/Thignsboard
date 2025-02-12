@@ -30,9 +30,5 @@
       "triggerType" : "ALARM"
     },
     "triggerType" : "ALARM"
-  },
-  "relations" : [ ],
-  "attributes" : {
-    "SERVER_SCOPE" : [ ]
   }
 }

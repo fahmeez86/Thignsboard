@@ -28,9 +28,5 @@
     },
     "name" : "Alarm update notification",
     "notificationType" : "ALARM"
-  },
-  "relations" : [ ],
-  "attributes" : {
-    "SERVER_SCOPE" : [ ]
   }
 }

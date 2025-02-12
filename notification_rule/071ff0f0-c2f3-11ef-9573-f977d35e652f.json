@@ -29,9 +29,5 @@
       "triggerType" : "ALARM_COMMENT"
     },
     "triggerType" : "ALARM_COMMENT"
-  },
-  "relations" : [ ],
-  "attributes" : {
-    "SERVER_SCOPE" : [ ]
   }
 }

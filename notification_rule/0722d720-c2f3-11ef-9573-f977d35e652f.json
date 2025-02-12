@@ -26,9 +26,5 @@
       "triggerType" : "EDGE_CONNECTION"
     },
     "triggerType" : "EDGE_CONNECTION"
-  },
-  "relations" : [ ],
-  "attributes" : {
-    "SERVER_SCOPE" : [ ]
   }
 }

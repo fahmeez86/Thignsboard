@@ -31,9 +31,5 @@
     },
     "name" : "Edge connection notification",
     "notificationType" : "EDGE_CONNECTION"
-  },
-  "relations" : [ ],
-  "attributes" : {
-    "SERVER_SCOPE" : [ ]
   }
 }

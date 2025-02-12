@@ -28,9 +28,5 @@
       "triggerType" : "INTEGRATION_LIFECYCLE_EVENT"
     },
     "triggerType" : "INTEGRATION_LIFECYCLE_EVENT"
-  },
-  "relations" : [ ],
-  "attributes" : {
-    "SERVER_SCOPE" : [ ]
   }
 }

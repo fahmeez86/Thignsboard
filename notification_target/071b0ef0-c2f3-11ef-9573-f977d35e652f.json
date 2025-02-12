@@ -16,9 +16,5 @@
       "id" : "071b0ef0-c2f3-11ef-9573-f977d35e652f"
     },
     "name" : "Tenant administrators"
-  },
-  "relations" : [ ],
-  "attributes" : {
-    "SERVER_SCOPE" : [ ]
   }
 }

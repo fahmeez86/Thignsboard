@@ -2,13 +2,13 @@
   "entityType" : "DEVICE",
   "entity" : {
     "additionalInfo" : {
-      "gateway" : true,
+      "gateway" : false,
       "overwriteActivityTime" : false,
       "description" : ""
     },
     "customerId" : {
       "entityType" : "CUSTOMER",
-      "id" : "f74a3b20-cb64-11ef-9c23-49209c3d9e87"
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
     },
     "deviceData" : {
       "configuration" : {
@@ -26,43 +26,27 @@
     "firmwareId" : null,
     "id" : {
       "entityType" : "DEVICE",
-      "id" : "60f96ed0-c334-11ef-9573-f977d35e652f"
+      "id" : "3fda6bf0-d54a-11ef-b246-25c828565e3d"
     },
     "label" : "",
-    "name" : "DCH_GW",
-    "ownerId" : {
-      "entityType" : "CUSTOMER",
-      "id" : "f74a3b20-cb64-11ef-9c23-49209c3d9e87"
-    },
+    "name" : "3Q_GW",
+    "ownerId" : null,
     "softwareId" : null,
     "type" : "default"
   },
   "credentials" : {
-    "credentialsId" : "31958090aecc2972068167eeca29f4c8f32e9926009408f7782ba3c77028c6c5",
+    "credentialsId" : "6a9d5b2fc7d1bd9c9de74f18e1dc2cd0a9ab1e0c50ddba1be1b2c7f1635b3e7f",
     "credentialsType" : "MQTT_BASIC",
-    "credentialsValue" : "{\"clientId\":\"DCH_GW\",\"userName\":\"admindch\",\"password\":\"12345678\"}"
+    "credentialsValue" : "{\"clientId\":\"3Q_GW\",\"userName\":\"admin3q\",\"password\":\"12345678\"}"
   },
-  "relations" : [ {
-    "additionalInfo" : null,
-    "from" : {
-      "entityType" : "ASSET",
-      "id" : "bde4b7b0-c732-11ef-9c23-49209c3d9e87"
-    },
-    "to" : {
-      "entityType" : "DEVICE",
-      "id" : "60f96ed0-c334-11ef-9573-f977d35e652f"
-    },
-    "type" : "Contains",
-    "typeGroup" : "COMMON",
-    "version" : 260611
-  } ],
+  "relations" : [ ],
   "attributes" : {
     "SERVER_SCOPE" : [ {
       "booleanValue" : true,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "active",
-      "lastUpdateTs" : 1738038220867,
+      "lastUpdateTs" : 1739001354049,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -70,32 +54,32 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "inactivityAlarmTime",
-      "lastUpdateTs" : 1738033471302,
-      "longValue" : 1738033471301,
+      "lastUpdateTs" : 1737170666303,
+      "longValue" : 1737170666303,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastActivityTime",
-      "lastUpdateTs" : 1739332442484,
-      "longValue" : 1739332440150,
+      "lastUpdateTs" : 1739332451237,
+      "longValue" : 1739332450179,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastConnectTime",
-      "lastUpdateTs" : 1738038220864,
-      "longValue" : 1738038220864,
+      "lastUpdateTs" : 1739250750837,
+      "longValue" : 1739250750837,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastDisconnectTime",
-      "lastUpdateTs" : 1738032840364,
-      "longValue" : 1738032840364,
+      "lastUpdateTs" : 1739250749975,
+      "longValue" : 1739250749975,
       "strValue" : null
     } ],
     "SHARED_SCOPE" : [ ]

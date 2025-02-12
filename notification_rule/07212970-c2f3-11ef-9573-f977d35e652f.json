@@ -23,16 +23,12 @@
       "triggerType" : "RULE_ENGINE_COMPONENT_LIFECYCLE_EVENT",
       "onlyRuleChainLifecycleFailures" : true,
       "onlyRuleNodeLifecycleFailures" : true,
-      "ruleChainEvents" : [ "UPDATED", "STARTED", "STOPPED" ],
+      "ruleChainEvents" : [ "UPDATED", "STOPPED", "STARTED" ],
       "ruleChains" : null,
-      "ruleNodeEvents" : [ "UPDATED", "STARTED", "STOPPED" ],
+      "ruleNodeEvents" : [ "UPDATED", "STOPPED", "STARTED" ],
       "trackRuleNodeEvents" : true,
       "triggerType" : "RULE_ENGINE_COMPONENT_LIFECYCLE_EVENT"
     },
     "triggerType" : "RULE_ENGINE_COMPONENT_LIFECYCLE_EVENT"
-  },
-  "relations" : [ ],
-  "attributes" : {
-    "SERVER_SCOPE" : [ ]
   }
 }

@@ -28,9 +28,5 @@
     },
     "name" : "Alarm comment notification",
     "notificationType" : "ALARM_COMMENT"
-  },
-  "relations" : [ ],
-  "attributes" : {
-    "SERVER_SCOPE" : [ ]
   }
 }

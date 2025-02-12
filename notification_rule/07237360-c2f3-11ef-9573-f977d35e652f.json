@@ -25,9 +25,5 @@
       "triggerType" : "EDGE_COMMUNICATION_FAILURE"
     },
     "triggerType" : "EDGE_COMMUNICATION_FAILURE"
-  },
-  "relations" : [ ],
-  "attributes" : {
-    "SERVER_SCOPE" : [ ]
   }
 }

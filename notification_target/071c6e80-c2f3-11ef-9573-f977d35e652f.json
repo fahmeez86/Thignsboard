@@ -14,9 +14,5 @@
       "id" : "071c6e80-c2f3-11ef-9573-f977d35e652f"
     },
     "name" : "Affected user"
-  },
-  "relations" : [ ],
-  "attributes" : {
-    "SERVER_SCOPE" : [ ]
   }
 }
