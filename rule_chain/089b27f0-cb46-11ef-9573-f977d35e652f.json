@@ -18,40 +18,12 @@
   },
   "metaData" : {
     "connections" : [ {
-      "fromIndex" : 0,
-      "toIndex" : 1,
+      "fromIndex" : 1,
+      "toIndex" : 2,
       "type" : "Success"
     } ],
     "firstNodeIndex" : null,
     "nodes" : [ {
-      "additionalInfo" : {
-        "description" : "",
-        "layoutX" : 336,
-        "layoutY" : 55
-      },
-      "configuration" : {
-        "msgCount" : 0,
-        "periodInSeconds" : 60,
-        "scriptLang" : "JS",
-        "jsScript" : "var time = new Date().getHours(); // Current hour\r\nvar weather = \"cloudy\"; // Simulated weather condition\r\n\r\n// Simulated irradiance generation function\r\nvar irradiance_emu = (function(time, weather) {\r\n    let baseIrradiance = 0;\r\n\r\n    if (time >= 6 && time < 9) {\r\n        baseIrradiance = Math.random() * 100 +\r\n            200; // Morning\r\n    } else if (time >= 9 && time < 15) {\r\n        baseIrradiance = Math.random() * 200 +\r\n            600; // Noon\r\n    } else if (time >= 15 && time < 18) {\r\n        baseIrradiance = Math.random() *100+ 100; // Evening\r\n    } else {\r\n        baseIrradiance = Math.random() * 0; // Night\r\n    }\r\n\r\n    // Weather adjustments\r\n    if (weather === \"cloudy\") {\r\n        baseIrradiance *= 0.4;\r\n    } else if (weather === \"rainy\") {\r\n        baseIrradiance *= 0.2;\r\n    }\r\n\r\n    return parseFloat(baseIrradiance.toFixed(2));\r\n})(time, weather);\r\n\r\n// Output to ThingsBoard\r\nreturn {\r\n    msg: {\r\n        irradiance_emu: irradiance_emu\r\n    },\r\n    metadata: {},\r\n    msgType: \"POST_TELEMETRY_REQUEST\"\r\n};",
-        "tbelScript" : "",
-        "originatorId" : "c450d3d0-cb48-11ef-910b-9da3e0fffcad",
-        "originatorType" : "DEVICE"
-      },
-      "configurationVersion" : 2,
-      "createdTime" : 0,
-      "debugSettings" : null,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "a528e7e0-cb48-11ef-910b-9da3e0fffcad"
-      },
-      "name" : "Irradiance data emulator",
-      "queueName" : null,
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.debug.TbMsgGeneratorNode"
-    }, {
       "additionalInfo" : {
         "description" : "",
         "layoutX" : 596,
@@ -74,6 +46,84 @@
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.flow.TbRuleChainInputNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 115,
+        "layoutY" : 311
+      },
+      "configuration" : {
+        "inputValueKey" : "WEATHER_ST:Irrad_Global",
+        "outputValueKey" : "WEATHER_ST:Irrad_Global_WH-M2",
+        "mathFunction" : "SUM",
+        "aggIntervalType" : "CUSTOM",
+        "timeZoneId" : "Asia/Kuala_Lumpur",
+        "aggIntervalValue" : 5,
+        "aggIntervalTimeUnit" : "MINUTES",
+        "intervalPersistencePolicy" : "ON_EACH_CHECK_AFTER_INTERVAL_END",
+        "outMsgType" : "POST_TELEMETRY_REQUEST",
+        "intervalCheckValue" : 5,
+        "intervalCheckTimeUnit" : "MINUTES",
+        "statePersistencePolicy" : "PERIODICALLY",
+        "statePersistenceValue" : 5,
+        "statePersistenceTimeUnit" : "MINUTES",
+        "autoCreateIntervals" : false,
+        "periodValue" : 5,
+        "periodTimeUnit" : "MINUTES",
+        "parentEntitiesQuery" : {
+          "type" : "group",
+          "entityGroupId" : null
+        }
+      },
+      "configurationVersion" : 2,
+      "createdTime" : 0,
+      "debugSettings" : null,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "4bfe03a0-2f9b-11f0-931f-6f6edcf4e1b2"
+      },
+      "name" : "IRR_TO_WH-M2",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.analytics.incoming.TbSimpleAggMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 370,
+        "layoutY" : 246
+      },
+      "configuration" : {
+        "operation" : "CUSTOM",
+        "arguments" : [ {
+          "type" : "MESSAGE_BODY",
+          "key" : "WEATHER_ST:Irrad_Global_WH-M2",
+          "name" : "x",
+          "defaultValue" : null
+        } ],
+        "customFunction" : "x /1000 /60 * 2231.23",
+        "result" : {
+          "type" : "TIME_SERIES",
+          "key" : "WEATHER_ST:Irrad_Global_WH-M2-SOL",
+          "resultValuePrecision" : 2,
+          "addToBody" : false,
+          "addToMetadata" : true
+        }
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : null,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "4bfe51c0-2f9b-11f0-931f-6f6edcf4e1b2"
+      },
+      "name" : "IRR_TO_WH-M2-SOL",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.math.TbMathNode"
     } ],
     "ruleChainConnections" : null
   },

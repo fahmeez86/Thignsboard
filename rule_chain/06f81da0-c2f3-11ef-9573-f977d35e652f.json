@@ -74,9 +74,12 @@
         "layoutY" : 271
       },
       "configuration" : {
-        "defaultTTL" : 0
+        "defaultTTL" : 0,
+        "processingSettings" : {
+          "type" : "ON_EVERY_MESSAGE"
+        }
       },
-      "configurationVersion" : 0,
+      "configurationVersion" : 1,
       "createdTime" : 0,
       "debugSettings" : null,
       "externalId" : null,
@@ -97,10 +100,13 @@
       "configuration" : {
         "scope" : "CLIENT_SCOPE",
         "notifyDevice" : false,
+        "processingSettings" : {
+          "type" : "ON_EVERY_MESSAGE"
+        },
         "sendAttributesUpdatedNotification" : false,
         "updateAttributesOnlyOnValueChange" : true
       },
-      "configurationVersion" : 2,
+      "configurationVersion" : 3,
       "createdTime" : 0,
       "debugSettings" : null,
       "externalId" : null,

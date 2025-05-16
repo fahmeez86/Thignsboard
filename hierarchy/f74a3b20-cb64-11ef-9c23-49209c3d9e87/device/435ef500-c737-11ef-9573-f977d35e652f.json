@@ -95,5 +95,6 @@
       "strValue" : null
     } ],
     "SHARED_SCOPE" : [ ]
-  }
+  },
+  "calculatedFields" : [ ]
 }

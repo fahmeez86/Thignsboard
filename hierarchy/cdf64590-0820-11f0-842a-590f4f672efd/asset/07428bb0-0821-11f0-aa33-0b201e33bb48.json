@@ -1,0 +1,62 @@
+{
+  "entityType" : "ASSET",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : ""
+    },
+    "assetProfileId" : {
+      "entityType" : "ASSET_PROFILE",
+      "id" : "0716c930-c2f3-11ef-9573-f977d35e652f"
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "cdf64590-0820-11f0-842a-590f4f672efd"
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "ASSET",
+      "id" : "07428bb0-0821-11f0-aa33-0b201e33bb48"
+    },
+    "label" : null,
+    "name" : "3Q EQUESTRIAN CENTRE 111.985 kWp",
+    "ownerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "cdf64590-0820-11f0-842a-590f4f672efd"
+    },
+    "type" : "default"
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "07428bb0-0821-11f0-aa33-0b201e33bb48"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "3fda6bf0-d54a-11ef-b246-25c828565e3d"
+    },
+    "type" : "Contains",
+    "typeGroup" : "COMMON",
+    "version" : 955711
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "address",
+      "lastUpdateTs" : 1742760009887,
+      "longValue" : null,
+      "strValue" : "LOT 4256, JLN KUNDANG, KG SUNGAI SERAI, 48050 KUANG, SELANGOR."
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "type",
+      "lastUpdateTs" : 1742759931267,
+      "longValue" : null,
+      "strValue" : "SELF-CONSUMPTION (SELCO)"
+    } ]
+  },
+  "calculatedFields" : [ ]
+}

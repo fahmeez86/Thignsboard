@@ -107,5 +107,6 @@
       "longValue" : null,
       "strValue" : "+1112223334"
     } ]
-  }
+  },
+  "calculatedFields" : [ ]
 }

@@ -57,5 +57,6 @@
       "longValue" : null,
       "strValue" : "SELF-CONSUMPTION (SELCO)"
     } ]
-  }
+  },
+  "calculatedFields" : [ ]
 }

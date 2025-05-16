@@ -1,0 +1,22 @@
+{
+  "entityType" : "WIDGETS_BUNDLE",
+  "entity" : {
+    "alias" : "_customs",
+    "description" : null,
+    "externalId" : null,
+    "id" : {
+      "entityType" : "WIDGETS_BUNDLE",
+      "id" : "360974e0-2ef5-11f0-a2b7-b714401cbb0f"
+    },
+    "image" : null,
+    "name" : "#Customs",
+    "order" : null,
+    "scada" : false,
+    "title" : "#Customs"
+  },
+  "fqns" : [ "timeseries_chart_with_selection_time", "edit_times_with_option_time_windows", "line_chart_with_button" ],
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

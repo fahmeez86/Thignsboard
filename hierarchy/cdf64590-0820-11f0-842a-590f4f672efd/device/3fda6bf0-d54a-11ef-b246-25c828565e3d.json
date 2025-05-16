@@ -1,0 +1,130 @@
+{
+  "entityType" : "DEVICE",
+  "entity" : {
+    "additionalInfo" : {
+      "gateway" : false,
+      "overwriteActivityTime" : false,
+      "description" : ""
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "cdf64590-0820-11f0-842a-590f4f672efd"
+    },
+    "deviceData" : {
+      "configuration" : {
+        "type" : "DEFAULT"
+      },
+      "transportConfiguration" : {
+        "type" : "DEFAULT"
+      }
+    },
+    "deviceProfileId" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "0714a650-c2f3-11ef-9573-f977d35e652f"
+    },
+    "externalId" : null,
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE",
+      "id" : "3fda6bf0-d54a-11ef-b246-25c828565e3d"
+    },
+    "label" : "",
+    "name" : "3Q_GW",
+    "ownerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "cdf64590-0820-11f0-842a-590f4f672efd"
+    },
+    "softwareId" : null,
+    "type" : "default"
+  },
+  "credentials" : {
+    "credentialsId" : "6a9d5b2fc7d1bd9c9de74f18e1dc2cd0a9ab1e0c50ddba1be1b2c7f1635b3e7f",
+    "credentialsType" : "MQTT_BASIC",
+    "credentialsValue" : "{\"clientId\":\"3Q_GW\",\"userName\":\"admin3q\",\"password\":\"12345678\"}"
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "07428bb0-0821-11f0-aa33-0b201e33bb48"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "3fda6bf0-d54a-11ef-b246-25c828565e3d"
+    },
+    "type" : "Contains",
+    "typeGroup" : "COMMON",
+    "version" : 955711
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "DEVICE",
+      "id" : "3fda6bf0-d54a-11ef-b246-25c828565e3d"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "3fda6bf0-d54a-11ef-b246-25c828565e3d"
+    },
+    "type" : "Contains",
+    "typeGroup" : "COMMON",
+    "version" : 956485
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "DEVICE",
+      "id" : "3fda6bf0-d54a-11ef-b246-25c828565e3d"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "3fda6bf0-d54a-11ef-b246-25c828565e3d"
+    },
+    "type" : "Contains",
+    "typeGroup" : "COMMON",
+    "version" : 956485
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : true,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "active",
+      "lastUpdateTs" : 1747118056485,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityAlarmTime",
+      "lastUpdateTs" : 1747117759438,
+      "longValue" : 1747117759438,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastActivityTime",
+      "lastUpdateTs" : 1747355642273,
+      "longValue" : 1747355639711,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastConnectTime",
+      "lastUpdateTs" : 1747118247100,
+      "longValue" : 1747118247100,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastDisconnectTime",
+      "lastUpdateTs" : 1747118246514,
+      "longValue" : 1747118246514,
+      "strValue" : null
+    } ],
+    "SHARED_SCOPE" : [ ]
+  },
+  "calculatedFields" : [ ]
+}
